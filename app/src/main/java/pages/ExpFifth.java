@@ -88,11 +88,11 @@ public class ExpFifth extends AppCompatActivity {
         @Override
         public void run() {
             long now = SystemClock.uptimeMillis();
-            Log.d(TAG, "now:" + now);
+//            Log.d(TAG, "now:" + now);
 //            long next = now + (CAROUSEL_TIME - now % CAROUSEL_TIME);
             //等同于
             long next = now + CAROUSEL_TIME;
-            Log.d(TAG, "next: " + next);
+//            Log.d(TAG, "next: " + next);
             //回调应该运行的绝对时间 3秒后发送消息
             handler.postAtTime(mTicker, next);
             currentItem++;

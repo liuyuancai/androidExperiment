@@ -46,7 +46,7 @@ public class PagesAdapter extends PagerAdapter {
         imageView.setTag(position);
         imageView.setImageResource(imageList.get(position).getImg());
         container.addView(imageView);
-        Log.d("tag","image"+imageList.get(position).getImg());
+//        Log.d("tag","image"+imageList.get(position).getImg());
         return imageView;
     }
 }
