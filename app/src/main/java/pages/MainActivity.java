@@ -2,6 +2,7 @@ package pages;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button exp_second,exp_third,exp_fourth,exp_fifth;
+    private Button exp_second,exp_third,exp_fourth,exp_fifth,exp_sixth;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         exp_third = findViewById(R.id.exp_third);
         exp_fourth = findViewById(R.id.exp_fourth);
         exp_fifth = findViewById(R.id.exp_fifth);
+        exp_sixth = findViewById(R.id.exp_sixth);
         //对exp_second设置点击事件
         exp_second.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this,ExpFifth.class);
+                startActivity(intent);
+            }
+        });
+        exp_sixth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,ExpSixth.class);
                 startActivity(intent);
             }
         });

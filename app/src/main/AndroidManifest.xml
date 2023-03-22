@@ -16,6 +16,18 @@
         android:theme="@style/Theme.AndroidExperiment"
         tools:targetApi="31">
         <activity
+            android:name=".ExpSixthTallyBook"
+            android:exported="false" />
+        <activity
+            android:name=".ExpSixthEditInfo"
+            android:exported="false" />
+        <activity
+            android:name=".ExpSixthInfo"
+            android:exported="false" />
+        <activity
+            android:name=".ExpSixth"
+            android:exported="false" />
+        <activity
             android:name=".ExpFifth"
             android:exported="false" />
         <activity

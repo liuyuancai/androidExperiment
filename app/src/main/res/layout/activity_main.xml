@@ -39,5 +39,11 @@
             android:layout_height="50dp"
             android:text="实验五"
             />
+        <Button
+            android:id="@+id/exp_sixth"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="实验六"
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
